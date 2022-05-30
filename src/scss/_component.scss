@@ -1,0 +1,133 @@
+.card{
+    color: $color-card;
+    background-color: $color-card-bg;
+    width: 250px;
+    padding: 15px;
+    height: max-content;
+    margin-left: 8px;
+    @include bord-radi(3);
+    font-size: .85rem;
+    font-weight: 600;
+
+
+    div{
+
+        span{
+            padding: 8px;
+            display: block;
+        }
+        i{
+            cursor: pointer;
+            padding: 5px;
+            &:hover{
+                cursor: pointer;
+                padding: 5px;
+                background-color: $color-hover1;
+                @include bord-radi(2)
+            }
+        }
+    }
+}
+.card >:nth-child(1){
+    @include flex-center
+    }
+
+.add-card{
+
+    width: 300px;
+    margin-left: 8px;
+    display: flex;
+    input{
+        border: none;
+        width: 85%;
+        height: 30px;
+        @include bord-radi(3);
+        outline: 0;
+        padding: 5px;
+        background-color: $color-bg-addcard;
+        color: $color-white;
+    }
+    ::placeholder{
+
+        color: $color-white;
+        opacity: 1; 
+        font-size: 1rem;
+
+    }
+    :-ms-input-placeholder{
+        color: $color-white;
+    }
+    ::-ms-input-placeholder{
+        color: $color-white;
+    }
+    button{
+        height: 40px;
+        width: 15%;
+        padding: 5px;
+        border: none;
+        @include bord-radi(2)
+    }
+   
+}
+
+.task-list{
+
+    div{
+        div{
+            i{
+                display: none;
+            }
+        }
+    }
+   
+
+
+}
+.task{
+
+    height: 15px;
+    @include flex-center;
+    width: inherit;
+    background-color: $color-white;
+    font-weight: 500;
+    margin-top: 8px;
+    padding: 8px;
+    @include bord-radi(4);
+    @include transition(.2);
+    box-shadow: 0px 1px 0px 0px #0000004a;
+    &:hover{
+        background-color: $color-task-hov;
+        i{
+            display: block;
+            padding: 5px;
+            font-size: .7em;
+            box-sizing: border-box;
+            @include bord-radi(2);
+            @include transition(.2);
+            &:hover{
+                background-color: $color-task-hov-hov;
+            }
+        }
+        
+    }
+
+
+}
+
+.add-task{
+    width: 100%;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+
+    input{
+        border: none;
+        @include bord-radi(3);
+        outline: 0;
+        padding: 5px;
+    }
+    button{
+        height: 100%;
+        margin-left: auto;
+    }
+}

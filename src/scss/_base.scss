@@ -1,0 +1,31 @@
+$color-white : white;
+$color-bg1:hsl(191,12.1%,37%);
+$color-card : #172b4d;
+$color-card-bg :#ebecf0;
+$color-hover1 :rgba(124,122,122,26%);
+$color-bg-addcard :#80808054;
+$color-task-hov :rgba(128, 128, 128, 0.157);
+$color-task-hov-hov :rgba(119, 109, 109, 0.534);
+
+@mixin bord-radi($number) {
+    border-radius: #{$number}px;
+    -webkit-border-radius: #{$number}px;
+    -moz-border-radius: #{$number}px;
+    -ms-border-radius: #{$number}px;
+    -o-border-radius: #{$number}px;
+}
+@mixin transition($number) {
+    transition: #{$number}s ease-in-out;
+    -webkit-transition: #{$number}s ease-in-out;
+    -moz-transition: #{$number}s ease-in-out;
+    -ms-transition: #{$number}s ease-in-out;
+    -o-transition: #{$number}s ease-in-out;
+    
+}
+@mixin flex-center() {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}

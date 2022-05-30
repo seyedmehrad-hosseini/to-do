@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './style.css'
+import './css/main.min.css'
 import Task from './task';
 function Card(props) {
 
